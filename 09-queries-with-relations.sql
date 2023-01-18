@@ -27,4 +27,5 @@ SELECT * FROM cities AS c
 LEFT JOIN locations AS loc 
 ON loc.city_name = c.name
 LEFT JOIN events AS e 
-ON e.location_id = loc.id;
+ON e.location_id = loc.id
+WHERE c.name = 'Munich';
